@@ -41,7 +41,7 @@
   <select id="selectByMinSalary" parameterType="java.util.Map" resultMap="BaseResultMap" useCache="true">
     select 
     	EMPLOYEE_ID, FIRST_NAME, LAST_NAME, EMAIL, SALARY
-    	from LOUIS.EMPLOYEES
+    	from EMPLOYEES
     	<if test="min_salary != null">
     		where SALARY &lt; #{min_salary,jdbcType=DECIMAL}
     	</if>

@@ -172,6 +172,7 @@ public  class EnhancedCachingExecutor implements Interceptor {
 	 * Executor插件配置信息加载点
 	 * properties中有 "dependency" 属性来指示 配置的缓存依赖配置信息，读取文件，初始化EnhancedCacheManager
 	 */
+	@Override
 	public void setProperties(Properties properties) {
 		
 		if(!cachingManager.isInitialized())

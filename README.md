@@ -60,3 +60,25 @@ MyBatis Enhanced Cache, Control your Caches precisely! <br>
 ```
 * \<statement>节点配置更新语句和查询语句的依赖关系，如果id表示的更新语句执行了，会清空由<observer>配置的id表示的查询语句生成的缓存。
 * \<observer>节点表示当父节点<statement> id表示的更新语句执行后，应该清除此语句所产生的缓存
+
+建表语句：
+create table DEPARTMENTS(
+DEPARTMENT_ID DECIMAL,
+DEPARTMENT_NAME varchar(100),
+MANAGER_ID DECIMAL,
+LOCATION_ID DECIMAL
+);
+
+create table EMPLOYEES(
+EMPLOYEE_ID DECIMAL, 
+FIRST_NAME varchar(100), 
+LAST_NAME varchar(100), 
+EMAIL varchar(100), 
+PHONE_NUMBER varchar(100), 
+HIRE_DATE Date, 
+JOB_ID varchar(100), 
+SALARY DECIMAL, 
+COMMISSION_PCT DECIMAL, 
+MANAGER_ID DECIMAL, 
+DEPARTMENT_ID DECIMAL
+);
